@@ -1,0 +1,5 @@
+E:\My Projects\WindowsServiceManager\WindowsServiceManager\bin\Debug\WindowsServiceManager.dll
+E:\My Projects\WindowsServiceManager\WindowsServiceManager\bin\Debug\WindowsServiceManager.pdb
+E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.csprojResolveAssemblyReference.cache
+E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.dll
+E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.pdb
