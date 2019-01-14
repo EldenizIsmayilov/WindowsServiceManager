@@ -3,3 +3,7 @@ E:\My Projects\WindowsServiceManager\WindowsServiceManager\bin\Debug\WindowsServ
 E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.csprojResolveAssemblyReference.cache
 E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.dll
 E:\My Projects\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.pdb
+D:\Work\Visual Studio Projects\Libraries\WindowsServiceManager\WindowsServiceManager\bin\Debug\WindowsServiceManager.dll
+D:\Work\Visual Studio Projects\Libraries\WindowsServiceManager\WindowsServiceManager\bin\Debug\WindowsServiceManager.pdb
+D:\Work\Visual Studio Projects\Libraries\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.dll
+D:\Work\Visual Studio Projects\Libraries\WindowsServiceManager\WindowsServiceManager\obj\Debug\WindowsServiceManager.pdb

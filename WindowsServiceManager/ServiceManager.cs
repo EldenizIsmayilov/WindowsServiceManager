@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Timers;
@@ -12,9 +13,11 @@ namespace WindowsServiceManager
     {
         static Timer timer;
         static Action _operation;
+        static Configuration config = null;
         public ServiceManager(Action operation)
         {
             _operation = operation;
+            config = ConfigurationManager.OpenExeConfiguration(System.Reflection.Assembly.GetEntryAssembly().Location);
             timer = new Timer();
             timer.Interval = GetInterval();
             timer.Elapsed += new System.Timers.ElapsedEventHandler(Timer_Elapsed);
@@ -39,21 +42,20 @@ namespace WindowsServiceManager
 
         private double GetInterval()
         {
-            double interval = 10000;
-            double.TryParse(ConfigurationManager.AppSettings["ServiceWorkingInterval"], out interval);
+            double interval = 50000;
+            double.TryParse(config.AppSettings.Settings["ServiceWorkingInterval"].Value, out interval);
             return interval;
         }
 
-      
+
         private static bool Check()
         {
             DateTime startDate = DateTime.Now;
-            DateTime.TryParseExact(ConfigurationManager.AppSettings["ServiceStartDate"],
+            DateTime.TryParseExact(config.AppSettings.Settings["ServiceStartDate"].Value,
                             "dd.MM.yyyy HH:mm:ss",
                            CultureInfo.InvariantCulture,
                            DateTimeStyles.None,
                            out startDate);
-
             return DateTime.Now > startDate;
         }
     }
